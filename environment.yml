@@ -1,0 +1,28 @@
+name: metagenerator
+channels:
+  - conda-forge
+  - huggingface
+  - pytorch
+dependencies:
+  - python=3.8
+  - numpy
+  - matplotlib
+  - dill
+  - pandas
+  - seaborn
+  - scipy
+  - jupyterlab
+  - pip
+  - ipdb
+  - cython
+  - pyarrow >= 2
+  - scikit-learn
+  - tqdm
+  - transformers
+  - pytorch
+  - torchvision
+  - ipywidgets
+  - pip:
+    - openreview-py
+    - nltk
+    - textblob
