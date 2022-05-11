@@ -8,8 +8,8 @@ WARMUP_UPDATES=500
 LR=3e-05
 MAX_TOKENS=1024
 UPDATE_FREQ=16
-DATA_PATH=iclr2020-lu-tags/
-BART_PATH=bart.large/model.pt
+DATA_PATH=/content/metaGenerator/preprocess/metareview
+BART_PATH=/content/metaGenerator/bart.large/new_model.pt
 MODEL_PATH=/content/checkpoints
 mkdir -p $MODEL_PATH
 nvidia-smi

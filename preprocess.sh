@@ -1,6 +1,6 @@
-wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/encoder.json'
-wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/vocab.bpe'
-wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/dict.txt'
+# wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/encoder.json'
+# wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/vocab.bpe'
+# wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/dict.txt'
 
 TASK=metarevoew
 for SPLIT in train val
