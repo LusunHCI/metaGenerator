@@ -71,8 +71,13 @@ class Encoder:
         )
 
     def bpe(self, token):
-        if token in self.cache:
-            return self.cache[token]
+        special_tokens = ["<|endoftext|>"]
+        if token in special_tokens:
+            print("meet special tokens")
+            return token
+        else:
+            if token in self.cache:
+                return self.cache[token]
         word = tuple(token)
         pairs = get_pairs(word)
 

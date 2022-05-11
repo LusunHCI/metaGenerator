@@ -81,6 +81,7 @@ def add_sentence(df,best_beam_sets):
         sents = prepare_inputs(df.iloc[i]["review_body"])
         sents_content = [sents[j] for j in best_beam_sets[i]["sentences"]]
         rouge_score.append(best_beam_sets[i]["rouge_score"])
+        sents_content = " ".join(sents_content)
         selected_sents.append(sents_content)
     print("length of rouge_score",len(rouge_score))
     print("length of selected_summary",len(selected_sents))
@@ -88,8 +89,10 @@ def add_sentence(df,best_beam_sets):
     df["selected_sents"] = selected_sents
     return df
 
-df = pd.read_csv("../data/allyears.csv")
+
+
 year = 2022
+df = pd.read_csv("../data/allyears.csv")
 new_df = df[df["year"]==year]
 # print("totaly number in this year is", len(new_df))
 # best_beam_sets = get_beam_sets(new_df)
