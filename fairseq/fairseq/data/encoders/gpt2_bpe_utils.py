@@ -71,7 +71,7 @@ class Encoder:
         )
 
     def bpe(self, token):
-        special_tokens = ["<BRK>"]
+        special_tokens = ["BRK"]
         if token in special_tokens:
             print("meet special tokens")
             return token
