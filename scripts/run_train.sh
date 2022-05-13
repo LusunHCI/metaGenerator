@@ -8,7 +8,7 @@ WARMUP_UPDATES=500
 LR=3e-05
 MAX_TOKENS=1024
 UPDATE_FREQ=16
-DATA_PATH=/content/metaGenerator/preprocess/metareview
+DATA_PATH=/content/metaGenerator/preprocess/metareview/metareview-bin
 BART_PATH=/content/metaGenerator/bart.large/new_model.pt
 MODEL_PATH=/content/checkpoints
 mkdir -p $MODEL_PATH
