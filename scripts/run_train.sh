@@ -8,7 +8,7 @@ WARMUP_UPDATES=500
 LR=3e-05
 MAX_TOKENS=1024
 UPDATE_FREQ=16
-DATA_PATH=/home/slu/Projects/metaGenerator/preprocess/metareview
+DATA_PATH=/home/slu/Projects/metaGenerator/preprocess/metareview/metareview-bin
 BART_PATH=/home/slu/Projects/metaGenerator/bart.large/model.pt
 MODEL_PATH=/home/slu/Projects/metaGenerator/checkpoints
 mkdir -p $MODEL_PATH
