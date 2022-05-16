@@ -14,7 +14,7 @@ MODEL_PATH=/home/slu/Projects/metaGenerator/checkpoints
 mkdir -p $MODEL_PATH
 nvidia-smi
 
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=0,1,2,3 
 
 fairseq-train $DATA_PATH \
     --restore-file $BART_PATH \
