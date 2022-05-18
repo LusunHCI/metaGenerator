@@ -8,7 +8,7 @@ from fairseq.models.bart import BARTModel
 import argparse
 
 XSUM_KWARGS = dict(beam=6, lenpen=1.0, max_len_b=60, min_len=10, no_repeat_ngram_size=3)
-CNN_KWARGS = dict(beam=4, lenpen=2.0, max_len_b=232, min_len=41, no_repeat_ngram_size=3)
+CNN_KWARGS = dict(beam=4, lenpen=2.0, max_len_b=297, min_len=47, no_repeat_ngram_size=3)
 
 
 @torch.no_grad()
