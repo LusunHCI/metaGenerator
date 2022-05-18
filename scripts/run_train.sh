@@ -41,4 +41,5 @@ fairseq-train $DATA_PATH \
     --fp16 --update-freq $UPDATE_FREQ \
     --skip-invalid-size-inputs-valid-test \
     --find-unused-parameters \
+    --max-epoch 20 \
     --save-dir $MODEL_PATH | tee -a $MODEL_PATH/train.log \
