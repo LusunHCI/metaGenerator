@@ -265,7 +265,7 @@ class TranslationConfig(FairseqDataclass):
 
 
 @register_task("translation", dataclass=TranslationConfig)
-class TranslationTask(FairseqTask):
+class TranslationReviewTask(FairseqTask):
     """
     Translate from one (source) language to another (target) language.
 
