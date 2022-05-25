@@ -316,7 +316,10 @@ class TranslationTask(FairseqTask):
         assert src_dict.unk() == tgt_dict.unk()
         logger.info("[{}] dictionary: {} types".format(cfg.source_lang, len(src_dict)))
         logger.info("[{}] dictionary: {} types".format(cfg.target_lang, len(tgt_dict)))
-
+        print("***************src_dict********************")
+        print(src_dict)
+        print("***************tgt_dict********************")
+        print(tgt_dict)
         return cls(cfg, src_dict, tgt_dict)
 
     def load_dataset(self, split, epoch=1, combine=False, **kwargs):
